@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
+    # 'crispy_forms', 
+    # 'app',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = 'app:login'
+LOGIN_REDIRECT_URL = 'app:top'
+
+# django-crispy-forms 設定
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
