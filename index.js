@@ -4,7 +4,3 @@ $(function () {
         $(this).toggleClass('active');
     });
 });
-
-// $(function (){
-//     $('#')
-// })

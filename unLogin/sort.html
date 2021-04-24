@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>ハッカソンvol2</title>
 </head>
 
 <body>
     <h1>冷蔵庫の残り物から<br>レシピ提案</h1>
-    <h2>・どれを優先的に使いますか？</h2>
+    <h2>・どれを優先的に<br>使いますか？</h2>
     <h3>
-        <input class="sort" type="button" value="大根1">
+        <input class="sort" type="button" value="大根1" id="1">
         <input class="sortbutton" type="button" value="↑">
-        <input class="sortbutton" type="button" value="↓"><br><br>
-        <input class="sort" type="button" value="大根2">
-        <input class="sortbutton" type="button" value="↑">
-        <input class="sortbutton" type="button" value="↓"><br><br>
-        <input class="sort" type="button" value="大根3">
-        <input class="sortbutton" type="button" value="↑">
+        <input class=" sortbutton" type="button" value="↓" onclick="sortdown(1)"><br><br>
+        <input class=" sort" type="button" value="大根2" id="2">
+        <input class="sortbutton" type="button" value="↑" onclick="sortup(2)">
+        <input class="sortbutton" type="button" value="↓" onclick="sortdown(2)"><br><br>
+        <input class="sort" type="button" value="大根3" id="3">
+        <input class="sortbutton" type="button" value="↑" onclick="sortup(3)">
         <input class="sortbutton" type="button" value="↓"><br><br>
     </h3>
 
@@ -31,5 +32,5 @@
         <input class="button" type="button" onclick="location.href='../index.html'" value="戻る" id="backToIndex">
     </h2>
 
-
+    <script src="../sort.js"></script>
 </body>
