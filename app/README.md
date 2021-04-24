@@ -4,7 +4,7 @@ git cloneをします
 このディレクトリの中で以下を実行
 ```
 $ cd project
-$ python generate_secretkey_setting.py > local_settings.py
+$ python get_random_secret_key.py > local_settings.py
 $ cd ..
 $ docker-compose up --build
 ```
