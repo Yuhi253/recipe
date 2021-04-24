@@ -19,20 +19,14 @@
     <h1>冷蔵庫の残り物からレシピ提案</h1>
     <h2>・残り物はなんですか？</h2>
     <h3>
-        <input class="text" type="text" name="leftovers" placeholder="残り物を入力">
-        <input class="button" type="submit" value="追加" id="addButton">
+        <input class="text" type="text" name="leftovers" placeholder="残り物を入力" id="data">
+        <input class="button" type="submit" value="追加" id="addButton" onclick="set()">
     </h3>
 
 
     <h2>・食材を追加</h2>
     <div>
-        <h3>
-            <input class="material" type="button" value="大根">
-            <input class="material" type="button" value="人参">
-            <input class="material" type="button" value="もやし">
-            <input class="material" type="button" value="卵">
-            <input class="material" type="button" value="豚肉">
-            <input class="material" type="button" value="牛肉">
+        <h3 id="leftovers">
         </h3>
     </div>
 
