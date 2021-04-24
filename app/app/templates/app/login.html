@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>ハッカソンvol2</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+
+<body>
+    <h1>ログイン</h1>
+    <h2>
+        <input class="text" type="text" name="address" placeholder="メールアドレス"><br>
+        <input class="text" type="text" name="password" placeholder="パスワード"><br>
+        <input class="button" type="submit" onclick="location.href='index.html'" value="ログイン" id="loginButton">
+    </h2>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'myfont';
+    src: url(ささがきフォント.ttf);
+}
+
+body{
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'myfont';
+    background-color: #F4F1DE;
+}
+
+h1 {
+    font-family: 'myfont';
+    color: #E07A5F;
+}
+
+h2 {
+    font-family: 'myfont';
+    color: #3D405B;
+}
+
+h3 {
+    font-family: 'myfont';
+    color: #3D405B;
+}
+
+
+
+.button {
+    font-size: 20pt;
+    font-family: 'myfont';
+    background-color: #3D405B;
+    color: #F4F1DE;
+    border-radius: 6px;
+
+}
+
+
+.text {
+    font-size: 20pt;
+    /* font-family: myfont; */
+}
+
+.material{
+    font-size: 20pt;
+    background-color: #F4F1DE;
+    color: #3D405B;
+    border-color: #3D405B;
+    border-radius: 6px;
+}
+
+.material.active{
+    background-color: #F4F1DE;
+    color: #81B29A;
+}

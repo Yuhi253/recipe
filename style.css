@@ -53,4 +53,20 @@ h3 {
 .material.active{
     background-color: #F4F1DE;
     color: #81B29A;
+    /* border-color: #81B29A; */
+}
+
+.sort{
+    background-color: #F4F1DE;
+    color: #81B29A;
+    border-radius: 6px;
+    font-size: 20pt;
+    width: 200pt;
+}
+
+.sortbutton{
+    background-color: #F4F1DE;
+    color: #81B29A;
+    border-radius: 6px;
+    font-size: 20pt;
 }
