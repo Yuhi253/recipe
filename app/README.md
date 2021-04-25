@@ -32,9 +32,9 @@ https://qiita.com/frosty/items/bb5bc1553f452e5bb8ff
 https://qiita.com/haessal/items/abaef7ee4fdbd3b218f5  
 
 ### Django関連
-https://tutorial.djangogirls.org/ja/
+https://tutorial.djangogirls.org/ja/  
 https://qiita.com/j54854/items/b25a85ddf41b6d8ffab6
 
 ### GitHub
-https://github.com/hironomiu/Git-GitHub-Training/blob/master/additional.md
+https://github.com/hironomiu/Git-GitHub-Training/blob/master/additional.md  
 https://qiita.com/hogeta_/items/33d2334c9b1919bd5120
