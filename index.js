@@ -28,4 +28,4 @@ function set() {
   input.value = data[data.length-1];
   leftovers.appendChild(input) + "<br>";
 }
-});
+;

@@ -6,15 +6,33 @@ fetch(url)
         return response1.json();
     })
     .then(function (data1) { //成功時に実行される
-        document.getElementById('list1-h1').innerText = data1['result'][0]['recipeTitle'];
-        document.getElementById('list2-h1').innerText = data1['result'][1]['recipeTitle'];
-        document.getElementById('list3-h1').innerText = data1['result'][2]['recipeTitle'];
-        // var img_url = data1['result'][0]['foodImageUrl'];
-        // console.log(img_url);
-        // var img_element = document.createElement('img');
-        // img_element.src = img_url;
-        // img_element.alt = '料理画像';
+        // console.log(data1);
+        var img_url1 = data1['result'][0]['foodImageUrl'];
+        var img_url2 = data1['result'][1]['foodImageUrl'];
+        var img_url3 = data1['result'][2]['foodImageUrl'];
+        document.getElementById('list1-img').src = img_url1;
+        document.getElementById('list2-img').src = img_url2;
+        document.getElementById('list3-img').src = img_url3;
+        document.getElementById('list1-h2').innerText = data1['result'][0]['recipeTitle'];
+        document.getElementById('list2-h2').innerText = data1['result'][1]['recipeTitle'];
+        document.getElementById('list3-h2').innerText = data1['result'][2]['recipeTitle'];
+        for(let i = 0; i < 3; i++)
+        {
+            document.getElementById('list1-h3').insertAdjacentHTML("beforeend", data1['result'][0]['recipeMaterial'][i]);
+            document.getElementById('list1-h3').insertAdjacentHTML("beforeend", ", ");
+            document.getElementById('list2-h3').insertAdjacentHTML("beforeend", data1['result'][1]['recipeMaterial'][i]);
+            document.getElementById('list2-h3').insertAdjacentHTML("beforeend", ", ");
+            document.getElementById('list3-h3').insertAdjacentHTML("beforeend", data1['result'][2]['recipeMaterial'][i]);
+            document.getElementById('list3-h3').insertAdjacentHTML("beforeend", ", ");
 
+        }
+        document.getElementById('list1-h3').insertAdjacentHTML("beforeend", "etc");
+        document.getElementById('list2-h3').insertAdjacentHTML("beforeend", "etc");
+        document.getElementById('list3-h3').insertAdjacentHTML("beforeend", "etc");
+
+        document.getElementById('list1-h4').href = data1['result'][0]['recipeUrl'];
+        document.getElementById('list2-h4').href = data1['result'][1]['recipeUrl'];
+        document.getElementById('list3-h4').href = data1['result'][2]['recipeUrl'];
 
     })
     .catch(function (err1) { //失敗時に実行される
