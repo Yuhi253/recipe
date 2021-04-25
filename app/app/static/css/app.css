@@ -33,9 +33,15 @@ h3 {
     background-color: #3D405B;
     color: #F4F1DE;
     border-radius: 6px;
-
 }
 
+.btn {
+    font-size: 20pt;
+    font-family: 'myfont';
+    background-color: #3D405B;
+    color: #F4F1DE;
+    border-radius: 6px;
+}
 
 .text {
     font-size: 20pt;
