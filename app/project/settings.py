@@ -134,8 +134,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_URL = 'app:login'
-LOGIN_REDIRECT_URL = 'app:top'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
 
 # django-crispy-forms 設定
 # CRISPY_TEMPLATE_PACK = 'bootstrap4'

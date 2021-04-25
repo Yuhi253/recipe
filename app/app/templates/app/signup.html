@@ -12,21 +12,19 @@
 </head>
 
 <body>
-    <!-- <h1>ログイン</h1>
+    <!-- <h1>新規登録</h1>
     <h2>
-        <input class="text" type="text" name="address" placeholder="ユーザー名"><br>
+        <input class="text" type="text" name="address" placeholder="メールアドレス"><br>
         <input class="text" type="text" name="password" placeholder="パスワード"><br>
-        <input class="button" type="submit" onclick="location.href='index.html'" value="ログイン" id="loginButton">
+        <input class="button" type="submit" value="登録" onclick="location.href='index.html'" id="signupButton">
     </h2> -->
-    <h1>ログイン画面</h1>
-
-    <form action="{% url 'login' %}" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-    <input type="submit" value="ログイン">
+    <h1>新規登録</h1>
+        <form action="{% url 'signup' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <input type="submit" value="新規登録">
     </form>
-
-    <p>or <a href= "{% url 'signup' %}">新規登録</a></p>
+    <p>or <a href= "{% url 'login' %}">ログイン</a></p>
 
 </body>
 
