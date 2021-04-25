@@ -12,7 +12,26 @@
 <body>
     <h1>冷蔵庫の残り物から<br>レシピ提案</h1>
     <h2>・こんなレシピはどうですか？</h2>
-    ここはresult.html <br>
+    <div class="list">
+        <div class="list1">
+            <h1 class="list1-item" id="list1-h1"></h1>
+            <h2 class="list1-item" id="list1-h2"></h2>
+            <h3 class="list1-item" id="list1-h3"></h3>
+        </div>
+        <div class="list2">
+            <h1 class="list2-item" id="list2-h1"></h1>
+            <h2 class="list2-item" id="list2-h2"></h2>
+            <h3 class="list2-item" id="list2-h3"></h3>
+        </div>
+
+        <div class="list3">
+            <h1 class="list3-item" id="list3-h1"></h1>
+            <h2 class="list3-item" id="list3-h2"></h2>
+            <h3 class="list3-item" id="list3-h3"></h3>
+        </div>
+    </div>
+    <input type="button" value="ここをクリック" onclick="clickBtn1()">
+
 
     <h2>
         <input class="button" type="button" onclick="location.href='../index.html'" value="メインに戻る" id="backToIndex"><br>
@@ -21,4 +40,5 @@
         <input class="button" type="button" onclick="location.href='sort.html'" value="一つもどる" id="backToSort">
     </h2>
 
+    <script src="../result.js"></script>
 </body>
